@@ -11,13 +11,15 @@ functions:
     spec:
       command: handler.py
       args: []
-      image: mlrun/mlrun:dev
+      image: ''
       volumes: []
       volume_mounts: []
       env: []
       description: ''
       build:
+        source: ./
+        base_image: mlrun/mlrun:dev
         commands: []
-        code_origin: https://github.com/yaronha/mlp2.git#5f2800b7f0558e2752e7493787580c0695ee8fd3
+        code_origin: '#2caf0393b582f68261d290de3f9f8a521aa5edb7'
 workflows:
   main: workflow.py
