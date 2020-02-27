@@ -18,6 +18,7 @@ functions:
         source: ./
         base_image: mlrun/mlrun
         commands: []
-        code_origin: https://github.com/yaronha/mlp2.git#8d2e289ac3f6c31d253aea02ecb62aee08b7457e
+        code_origin: https://github.com/yaronha/mlp2.git#bc4adced86588da3354d5d5d2cc5feece83d8310
 workflows:
-  main: workflow.py
+- name: main
+  code: workflow.py
